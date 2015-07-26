@@ -37,7 +37,7 @@ Window {
         Qt.quit()
     }
 
-/*
+    /*
     Component.onCompleted: {
         btn.clicked.connect(quitFunc)
     }

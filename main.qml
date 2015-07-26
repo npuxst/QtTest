@@ -6,6 +6,7 @@ Window {
     visible: true
     width: 60*8
     color: "red"
+
     Text {
         id: hello
         anchors.centerIn: parent
@@ -21,6 +22,7 @@ Window {
         anchors.fill: parent
         onClicked: {
             hello.text = "hello"
+            hello.font.pointSize = 40
         }
     }
 }

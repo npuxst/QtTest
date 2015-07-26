@@ -1,5 +1,6 @@
 import QtQuick 2.4
 import QtQuick.Window 2.2
+import QtQuick.Controls 1.4
 
 Window {
     id: win
@@ -15,6 +16,13 @@ Window {
         color: "blue"
     }
 
+    Button {
+        x: 0
+        y: 0
+        id: btn
+        text: "Quit"
+    }
+
     onWidthChanged: widthChanged()
 
     onHeightChanged: {
@@ -23,6 +31,21 @@ Window {
 
     function widthChanged(){
         txt.x = (win.width - txt.width)/2
+    }
+
+    function quitFunc(){
+        Qt.quit()
+    }
+
+/*
+    Component.onCompleted: {
+        btn.clicked.connect(quitFunc)
+    }
+    */
+
+    Connections {
+        target: btn
+        onClicked: quitFunc()
     }
 }
 

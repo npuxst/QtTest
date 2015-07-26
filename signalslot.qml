@@ -15,12 +15,14 @@ Window {
         color: "blue"
     }
 
-    onWidthChanged: {
-        txt.x = (win.width - txt.width)/2
-    }
+    onWidthChanged: widthChanged()
 
     onHeightChanged: {
         txt.y = (win.height - txt.height)/2
+    }
+
+    function widthChanged(){
+        txt.x = (win.width - txt.width)/2
     }
 }
 

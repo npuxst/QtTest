@@ -5,6 +5,7 @@ import QtQuick.Controls 1.2
 Window {
     visible: true
     width: 60*8
+    color: "red"
     Text {
         id: hello
         anchors.centerIn: parent

@@ -5,6 +5,11 @@ import QtQuick.Controls 1.4
 Rectangle {
 	width: 320
 	height: 480
+	color: "transparent"
+	
+	border.color: "blue"
+	border.width: 2
+	radius: 12
 	
 	Button {
 		id: quit

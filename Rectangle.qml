@@ -33,4 +33,15 @@ Rectangle {
 				console.log("text of label ",i, " : ", children[i].text)
 		}
 	}
+	
+	Item {
+		anchors.fill: parent
+		focus: true
+		Keys.onPressed: {
+			if (event.key == Qt.Key_Left) {
+				console.log("move left")
+				event.accepted = true
+			}
+		}
+	}
 }

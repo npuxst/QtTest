@@ -24,7 +24,7 @@ Rectangle {
                 implicitWidth: 70;  
                 implicitHeight: 25;  
                 border.width: control.pressed ? 2 : 1;  
-                border.color: (control.hovered || control.pressed) ? "green" : "#888880";  
+                border.color: (control.hovered || control.pressed) ? "green" : "red";  
             }  
         }  
 		
